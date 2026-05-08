@@ -178,7 +178,7 @@ console.log(resultado);
 
 ### Saída:
 
-```
+```js
 [
   { nome: 'Lucas', nota: 7, aprovado: true },
   { nome: 'Fernanda', nota: 9, aprovado: true }
@@ -211,7 +211,7 @@ console.log(filmesAcao);
 
 ### Saída:
 
-```
+```js
 [
   { titulo: 'Vingadores', categoria: 'Ação' },
   { titulo: 'Batman', categoria: 'Ação' }
@@ -246,7 +246,7 @@ console.log(totalItens);
 
 ### Saída:
 
-```
+```js
 18
 ```
 
