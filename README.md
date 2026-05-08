@@ -262,9 +262,9 @@ Os métodos `map()`, `filter()` e `reduce()` são fundamentais para manipulaçã
 
 Cada um possui uma finalidade específica:
 
-* `map()` → transforma os elementos de um array;
-* `filter()` → seleciona elementos com base em condições;
-* `reduce()` → reduz os dados para um único resultado.
+* `map()` - transforma os elementos de um array;
+* `filter()` - seleciona elementos com base em condições;
+* `reduce()` - reduz os dados para um único resultado.
 
 Esses métodos tornam o código mais organizado, reutilizável e fácil de entender, além de seguirem conceitos da programação funcional, com eles, é possível manipular listas e objetos de forma mais eficiente, evitando estruturas complexas e deixando o desenvolvimento mais produtivo.
 
