@@ -3,19 +3,23 @@ Tutorial prático sobre manipulação de coleções com listas em JavaScript uti
 
 ## Manipulação de Arrays em JavaScript
 
-###🔹 O que é um Array?
+🔹 ### O que é um Array?
+
 Um array é uma estrutura de dados utilizada para armazenar múltiplos valores em uma única variável.
+
 🔥Exemplo simples: 
   ```js
     const numeros = [10, 20, 30, 40, 50];
   ```
 
-## 🔹 Método map()
+ 🔹##  Método map()
 
-###✅ O que faz?
+✅  ### O que faz?
+
 O método `map()` percorre todos os elementos do array e retorna um novo array transformado.
 
-###📌Sintaxe
+📌 ### Sintaxe
+
 ```js
 array.map((item, indice, arrayOriginal) => {
     // transformação
@@ -23,7 +27,8 @@ array.map((item, indice, arrayOriginal) => {
 });
 ```
 
-###💻Exemplo Prático:
+💻 ### Exemplo Prático:
+
 ```js
  const notas = [5, 7, 8, 10, 6];
 
@@ -32,26 +37,30 @@ array.map((item, indice, arrayOriginal) => {
  console.log(notasAtualizadas);
 ```
 
-###🖥️ Saída:
+🖥️ ### Saída:
 ```js
   [6, 8, 9, 11, 7]
 ```
-####📚Explicação:
+📚 #### Explicação:
+
 Nesse exemplo, o método `map()` percorre todas as notas do array e cria um novo array somando 1 ponto em cada nota.
 
-## 🔹Método filter()
+🔹## Método filter()
 
-###✅ O que faz?
+✅###  O que faz?
+
 O método `filter()` cria um novo array contendo apenas os elementos que atendem a uma condição.
 
-###📌Sintaxe
+📌### Sintaxe
+
 ```js
   array.filter((elemento) => {
       // condição
   });
 ```
 
-###💻Exemplo prático:
+💻### Exemplo prático:
+
 ```js
   const alunos = [
       { nome: 'Ana', idade: 17 },
@@ -64,7 +73,8 @@ O método `filter()` cria um novo array contendo apenas os elementos que atendem
   
   console.log(maioresDeIdade);
 ```
-###🖥️Saída:
+
+🖥️### Saída:
 ```js
   [
     { nome: 'Carlos', idade: 22 },
@@ -72,16 +82,18 @@ O método `filter()` cria um novo array contendo apenas os elementos que atendem
   ]
 ```
 
-####📚Explicação:
+📚#### Explicação:
+
 *O método `filter()` percorre todos os elementos do array e retorna um novo array apenas com os itens que atendem à condição definida.
 
 *No exemplo acima, o `filter()` verificou a idade de cada aluno e manteve somente aqueles com idade maior ou igual a 18.
 
 *Os alunos menores de idade foram removidos do novo array.
 
-##🔹Método reduce()
+🔹## Método reduce()
 
-###✅ O que faz?
+✅### O que faz?
+
 O método `reduce()` reduz todos os elementos do array para um único valor.
 
 Ele é muito utilizado para:
@@ -92,14 +104,16 @@ Ele é muito utilizado para:
 *criar objetos;
 *contabilizar informações.
 
-###📌Sintaxe
+📌### Sintaxe
+
 ```js
 array.reduce((acumulador, elemento) => {
     return acumulador;
 }, valorInicial);
 ```
 
-###💻Exemplo Prático:
+💻### Exemplo Prático:
+
 ```js
 const vendas = [
     { produto: 'Notebook', valor: 3500 },
@@ -115,14 +129,18 @@ const totalVendas = vendas.reduce((acumulador, venda) => {
 console.log(totalVendas);
 ```
 
-###🖥️Saída:
+🖥️### Saída:
+
 ```js
 5150
 ```
 
-####📚Explicação:
+📚#### Explicação:
+
 *O método `reduce()` percorre todos os elementos do array e reduz os dados para um único valor.
 
 *No exemplo acima, o `reduce()` somou o valor de cada venda utilizando o acumulador.
+
+*O valor inicial começou em 0 e, a cada repetição, o valor da venda foi adicionado ao total até obter o resultado final de 5150.
 
 *O valor inicial começou em 0 e, a cada repetição, o valor da venda foi adicionado ao total até obter o resultado final de 5150.
