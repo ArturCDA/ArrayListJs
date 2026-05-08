@@ -185,7 +185,7 @@ console.log(resultado);
 ]
 ```
 
-### Explicação:
+#### Explicação:
 
 * Nesse exemplo, o `map()` adicionou uma nova propriedade chamada aprovado em cada objeto do array.
 
@@ -218,7 +218,7 @@ console.log(filmesAcao);
 ]
 ```
 
-### Explicação:
+#### Explicação:
 
 * O `filter()` analisou a categoria de cada filme e retornou somente os filmes de ação.
 
@@ -250,7 +250,7 @@ console.log(totalItens);
 18
 ```
 
-### Explicação:
+#### Explicação:
 
 * O `reduce()` percorreu todos os produtos do estoque e acumulou a quantidade de itens existentes.
 
