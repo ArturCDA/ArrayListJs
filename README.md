@@ -65,10 +65,10 @@ O método `filter()` cria um novo array contendo apenas os elementos que atendem
 
 ```js
   const alunos = [
-      { nome: 'Ana', idade: 17 },
-      { nome: 'Carlos', idade: 22 },
-      { nome: 'Marina', idade: 19 },
-      { nome: 'Pedro', idade: 15 }
+      { nome: 'Jorge', idade: 17 },
+      { nome: 'Tony', idade: 22 },
+      { nome: 'Moana', idade: 19 },
+      { nome: 'Aurora', idade: 15 }
   ];
   
   const maioresDeIdade = alunos.filter(aluno => aluno.idade >= 18);
@@ -80,8 +80,8 @@ O método `filter()` cria um novo array contendo apenas os elementos que atendem
 
 ```js
   [
-    { nome: 'Carlos', idade: 22 },
-    { nome: 'Marina', idade: 19 }
+    { nome: 'Tony', idade: 22 },
+    { nome: 'Moana', idade: 19 }
   ]
 ```
 
@@ -123,10 +123,10 @@ array.reduce((acumulador, elemento) => {
 
 ```js
 const vendas = [
-    { produto: 'Notebook', valor: 3500 },
-    { produto: 'Mouse', valor: 150 },
-    { produto: 'Teclado', valor: 300 },
-    { produto: 'Monitor', valor: 1200 }
+    { produto: 'Perfume', valor: 3500 },
+    { produto: 'Tênis', valor: 150 },
+    { produto: 'Amuleto', valor: 300 },
+    { produto: 'Lego', valor: 1200 }
 ];
 
 const totalVendas = vendas.reduce((acumulador, venda) => {
@@ -162,8 +162,10 @@ Ele percorre cada objeto da lista e retorna uma nova estrutura de dados.
 
 ```js
 const alunos = [
-    { nome: 'Lucas', nota: 7 },
-    { nome: 'Fernanda', nota: 9 }
+    { nome: 'Junior', nota: 7 },
+    { nome: 'Amilton', nota: 9 },
+    { nome: 'Kamily', nota: 10 },
+    { nome: 'Rogerio', nota: 6.5 }
 ];
 
 const resultado = alunos.map(aluno => {
@@ -180,8 +182,10 @@ console.log(resultado);
 
 ```js
 [
-  { nome: 'Lucas', nota: 7, aprovado: true },
-  { nome: 'Fernanda', nota: 9, aprovado: true }
+  { nome: 'Junior', nota: 7, aprovado: true },
+  { nome: 'Amilton', nota: 9, aprovado: true },
+  { nome: 'Kamily', nota: 10, aprovado: true},
+  { nome: 'Rogerio' nota: 6.5, aprovado: false}
 ]
 ```
 
@@ -199,9 +203,9 @@ Ele verifica cada item do array e mantém apenas os elementos que satisfazem det
 
 ```js
 const filmes = [
-    { titulo: 'Vingadores', categoria: 'Ação' },
-    { titulo: 'Toy Story', categoria: 'Animação' },
-    { titulo: 'Batman', categoria: 'Ação' }
+    { titulo: 'Velozes e Furiosos', categoria: 'Ação' },
+    { titulo: 'Procurando Nemo', categoria: 'Animação' },
+    { titulo: 'Superman', categoria: 'Ação' }
 ];
 
 const filmesAcao = filmes.filter(filme => filme.categoria === 'Ação');
@@ -213,8 +217,8 @@ console.log(filmesAcao);
 
 ```js
 [
-  { titulo: 'Vingadores', categoria: 'Ação' },
-  { titulo: 'Batman', categoria: 'Ação' }
+  { titulo: 'Velozes e Furiosos', categoria: 'Ação' },
+  { titulo: 'Superman', categoria: 'Ação' }
 ]
 ```
 
